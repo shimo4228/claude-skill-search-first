@@ -1,3 +1,5 @@
+Language: English | [日本語](README.ja.md)
+
 # claude-skill-search-first
 
 An [Agent Skill](https://agentskills.io/specification) that enforces a **research-before-coding** workflow. Before writing custom code, the agent searches for existing tools, libraries, MCP servers, and patterns — then makes an informed adopt/extend/build decision.
@@ -53,11 +55,3 @@ Result: Zero custom code, battle-tested solution
 ## License
 
 MIT
-
----
-
-## 日本語
-
-「コードを書く前にまず調べる」ワークフローを体系化した Agent Skill です。npm/PyPI、MCP サーバー、GitHub テンプレートなどを並列検索し、Adopt / Extend / Build の判断を下します。
-
-詳細は [`skills/search-first/SKILL.md`](skills/search-first/SKILL.md) を参照してください。
