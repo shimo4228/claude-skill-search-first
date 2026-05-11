@@ -1,0 +1,27 @@
+# claude-skill-search-first
+
+> A Claude Code skill (MIT) that enforces a research-before-coding workflow. Before writing custom code, the agent searches npm, PyPI, MCP registries, GitHub, and existing skills in parallel, then makes an informed Adopt / Extend / Compose / Build decision.
+
+## Core documentation
+
+- [llms-full.txt](llms-full.txt): self-contained Q&A reference for AI agents (Project Facts, Prior Research, 9 question-form H2 sections)
+- [README.md](README.md): human-facing narrative (install, decision matrix, worked example)
+- [SKILL.md](skills/search-first/SKILL.md): full skill specification — trigger conditions, 5-step workflow, decision matrix, quick mode vs full mode
+
+## Architecture
+
+- 5-step workflow: Need Analysis → Parallel Search → Evaluate → Decide → Implement
+- 4-way decision matrix: **Adopt** (exact match, well-maintained, MIT/Apache), **Extend** (partial match, thin wrapper), **Compose** (multiple small packages), **Build** (nothing suitable, informed by research)
+- Parallel search targets: npm registry, PyPI, MCP servers, GitHub, existing skills
+
+## Standard reference
+
+- [Agent Skill specification](https://agentskills.io/specification): the Claude Code skill format used by this repo
+- [SkillsMP marketplace](https://agentskills.io/specification): one-step install via `/skills add`
+
+## Sibling skills
+
+- [claude-skill-llms-txt-writer](https://github.com/shimo4228/claude-skill-llms-txt-writer): writes AI-facing docs optimized for ChatGPT / Perplexity / Gemini citation
+- [claude-skill-comply](https://github.com/shimo4228/claude-skill-comply): measures whether agents actually follow skill / rule definitions (v0.3.0)
+- [claude-skill-context-sync](https://github.com/shimo4228/claude-skill-context-sync): audits and fixes project documentation roles
+- [claude-skill-stocktake](https://github.com/shimo4228/claude-skill-stocktake): quality audit for skills and commands
