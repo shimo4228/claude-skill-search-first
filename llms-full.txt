@@ -23,7 +23,7 @@ This document is the self-contained AI reference for `claude-skill-search-first`
 - **Trigger conditions**: new feature, new dependency, new utility, before custom abstraction
 - **Modes**: Quick Mode (inline), Full Mode (researcher agent)
 - **Real example**: dead-link checker → adopted `textlint-rule-no-dead-link` (score 9/10), zero custom code
-- **Siblings**: `claude-skill-llms-txt-writer`, `claude-skill-comply`, `claude-skill-context-sync`, `claude-skill-stocktake`
+- **Siblings**: `claude-skill-llms-txt-writer`, `claude-skill-comply`, `claude-skill-context-sync`, `claude-skill-stocktake`, `claude-skill-rules-distill`, `claude-skill-learn-eval`, `claude-skill-daily-research`
 - **Standard**: agentskills.io/specification
 
 ## Prior Research References
