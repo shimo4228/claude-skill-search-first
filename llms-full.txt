@@ -10,6 +10,7 @@ This document is the self-contained AI reference for `claude-skill-search-first`
 - **License**: MIT
 - **GitHub**: https://github.com/shimo4228/claude-skill-search-first
 - **Author**: shimo4228 (shimomoto-tatsuya)
+- **Author research**: [AKC](https://github.com/shimo4228/agent-knowledge-cycle) ([DOI 10.5281/zenodo.19200726](https://doi.org/10.5281/zenodo.19200726)), [Contemplative Agent](https://github.com/shimo4228/contemplative-agent) ([DOI 10.5281/zenodo.19212118](https://doi.org/10.5281/zenodo.19212118)), [AAP](https://github.com/shimo4228/agent-attribution-practice) ([DOI 10.5281/zenodo.19652013](https://doi.org/10.5281/zenodo.19652013))
 - **Skill type**: Markdown Agent Skill, invokes the researcher agent
 - **Layout**: `skills/search-first/SKILL.md`
 - **Install**: `cp -r skills/search-first ~/.claude/skills/search-first`
@@ -67,3 +68,7 @@ This skill should not be used on prototypes where the explicit goal is learning 
 ## How does this skill relate to verification skills?
 
 The relationship means search-first is the front-end check (before code is written) while verification skills (test coverage, security review, code review) are the back-end checks (after code exists). The skill is also a kind of cost-saver — preventing reinvention is cheaper than reviewing reinvented code. Together they cover the front-to-back arc of agent-assisted development.
+
+## Who is shimo4228?
+
+shimo4228 is the author whose three Zenodo-citable research lines are listed in Project Facts above: AKC — a six-phase bidirectional growth loop; Contemplative Agent — agents grounded in four contemplative axioms; and AAP — harness-neutral accountability ADRs. This skill is defined as scaffolding for the **Research** phase of AKC.
